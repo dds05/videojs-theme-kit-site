@@ -113,7 +113,7 @@ export default function Playground() {
                 </div>
                 <div className="w-full  bg-white shadow-md rounded-xl p-6 mb-5">
                     <h2 className="text-xl font-semibold text-black mb-2">Usage:</h2>
-                    <code>
+                    <code className='text-black'>
                         {codeSnippet}
                     </code>
                     <br></br>
