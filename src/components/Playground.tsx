@@ -109,7 +109,7 @@ export default function Playground() {
 
                 <div className="w-full  bg-white shadow-md rounded-xl p-6 mb-5">
                     <h2 className="text-xl font-semibold text-black mb-2">Installation:</h2>
-                    <code>npm i videojs-theme-kit</code>
+                    <code className='text-black'>npm i videojs-theme-kit</code>
                 </div>
                 <div className="w-full  bg-white shadow-md rounded-xl p-6 mb-5">
                     <h2 className="text-xl font-semibold text-black mb-2">Usage:</h2>
@@ -118,7 +118,7 @@ export default function Playground() {
                     </code>
                     <br></br>
                     <br></br>
-                    <code>
+                    <code className='text-black'>
                        <b>Note:</b> (Available Skin Names : ['slate','spaced','sleek','zen'])
                     </code>
                 </div>
