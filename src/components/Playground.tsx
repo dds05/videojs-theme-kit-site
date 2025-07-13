@@ -14,10 +14,10 @@ export default function Playground() {
     const searchParams = useSearchParams();
 
     const SDK_VERSION = require('videojs-theme-kit/package.json')['version'];
-    // const SDK_VERSION=0
+
 
     const videoRef = useRef(null);
-    const playerRef = useRef(null);
+    const playerRef = useRef<any>(null);
     const [formValues, setFormValues] = useState({
         skin: searchParams.get('skin') || 'sleek',
     });
@@ -65,7 +65,7 @@ export default function Playground() {
         console.log(videojs.getPlayer('my-player'));
 
         if (videojs.getPlayer('my-player')) {
-            videojs.getPlayer('my-player').dispose('my-player');
+            videojs?.getPlayer('my-player')?.dispose();
             playerRef.current = null
             let videoElement = document.createElement('video');
             videoElement.className = 'video-js';
