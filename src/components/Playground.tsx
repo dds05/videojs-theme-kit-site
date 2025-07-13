@@ -90,6 +90,9 @@ export default function Playground() {
 
 
     useEffect(() => {
+
+        if (typeof window === "undefined") return; 
+        
         const script = document.createElement("script",);
         script.setAttribute('data-name','BMC-Widget')
         script.src = "https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
