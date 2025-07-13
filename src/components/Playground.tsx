@@ -96,6 +96,7 @@ export default function Playground() {
 
     return (
         <div className='bg-[#e6ecf0] playground-wrapper flex flex-col md:flex-row min-h-screen'>
+            <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Dds05" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
             <div style={{ width: `${100 - dividerX}%` }} className='user-controls  w-full md:w-auto'>
                 <u className='text-gray-800'> <h2 className='text-center text-2xl mb-5 font-bold'>
                     VideoJS Theme Kit @{SDK_VERSION}
