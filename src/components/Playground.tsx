@@ -85,7 +85,7 @@ export default function Playground() {
     }
 
     const codeSnippet= `player.on('ready',()=>{ \n`+
-        `playerId.theme({skin:'SKIN_NAME'}) \n` +
+        `player.theme({skin:'SKIN_NAME'}) \n` +
     '})`'
 
 
