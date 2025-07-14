@@ -13,8 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VideoJS Theme Kit",
-  description: "Customize themes for you player",
+  title: "Videojs Theme Kit",
+  description: "Customize themes for your Video.js player easily with our toolkit.",
+  keywords: ["Video.js", "Theme", "Player Customization", "Videojs Theme Kit","Videojs-Plugin"],
+  metadataBase: new URL("https://videojs-theme-kit-site.vercel.app/"),
+  openGraph: {
+    title: "Videojs Theme Kit",
+    description: "Customize themes for your Video.js player easily.",
+    url: "https://videojs-theme-kit-site.vercel.app/",
+    siteName: "VideoJS Theme Kit",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export default function RootLayout({
