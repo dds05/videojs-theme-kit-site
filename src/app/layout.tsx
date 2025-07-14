@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Videojs Theme Kit",
     description: "Customize themes for your Video.js player easily.",
     url: "https://videojs-theme-kit-site.vercel.app/",
-    siteName: "VideoJS Theme Kit",
+    siteName: "Videojs Theme Kit",
     type: "website",
   },
   robots: {
