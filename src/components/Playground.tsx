@@ -123,7 +123,7 @@ export default function Playground() {
             <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="Dds05" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
             <div style={{ width: `${100 - dividerX}%` }} className='user-controls  w-full md:w-auto'>
                 <u className='text-gray-800'> <h2 className='text-center text-2xl mb-5 font-bold'>
-                    VideoJS Theme Kit @{SDK_VERSION}
+                    Videojs Theme Kit @{SDK_VERSION}
                 </h2></u>
                 <div className="w-full  bg-white shadow-md rounded-xl p-6 mb-5">
                     <h2 className="text-xl font-semibold text-black">Github: <a target='_blank' className='font-medium text-blue-600 dark:text-blue-500 hover:underline' href="https://github.com/dds05/videojs-theme-kit">https://github.com/dds05/videojs-theme-kit</a></h2>
