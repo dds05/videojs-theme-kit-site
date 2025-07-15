@@ -11,7 +11,6 @@ import 'video.js/dist/video-js.css'
 export default function Playground() {
 
     let playerId = 'my-player';
-    const searchParams = useSearchParams();
 
     const SDK_VERSION = require('videojs-theme-kit/package.json')['version'];
 
@@ -19,7 +18,8 @@ export default function Playground() {
     const videoRef = useRef(null);
     const playerRef = useRef<any>(null);
     const [formValues, setFormValues] = useState({
-        skin: searchParams.get('skin') || 'sleek',
+        skin:  'sleek',
+        themeColor: '#ffffff', 
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
@@ -79,7 +79,7 @@ export default function Playground() {
             autoplay: true,
             sources: [{ src: "https://d2zihajmogu5jn.cloudfront.net/CoitTower/master_ts_segtimes.m3u8" }]
         }, () => {
-            playerRef.current.theme({ skin: formValues.skin })
+            playerRef.current.theme({ skin: formValues.skin , color: formValues.themeColor })
 
         })
     }
@@ -160,6 +160,20 @@ export default function Playground() {
                                 <option value="zen">Zen</option>
                             </select>
                         </div>
+                        <div>
+                        <label htmlFor="progressBarColor" className="text-sm font-semibold text-gray-500 block mb-1">
+                            Theme Color
+                        </label>
+                        <input
+                            type="color"
+                            name="themeColor"
+                            id="themeColor"
+                            value={formValues.themeColor}
+                            onChange={handleChange}
+                            className="p-1 h-10 w-full bg-white border border-gray-200 cursor-pointer rounded-lg"
+                            title="Choose your color"
+                        />
+                    </div>
                     </div>
                 </div>
                 <div className='flex justify-center mb-4'>
