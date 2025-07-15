@@ -45,9 +45,7 @@ body {
   }
 }
 
-div#bmc-wbtn{
-  bottom: 10px;
-}
+
 #bmc-wbtn + div{
   bottom:15px;
 }
