@@ -137,7 +137,7 @@ export default function Playground() {
                     <code className='text-black'>npm i videojs-theme-kit</code>
                 </div>
                 <div className="w-full  bg-white shadow-md rounded-xl p-6 mb-5">
-                    <h2 className="text-xl font-semibold text-black mb-2">Usage:</h2>
+                    <h2 className="text-xl font-semibold text-black mb-2">Quick Start:</h2>
                     <code className='text-black'>
                         {codeSnippet}
                     </code>
