@@ -2,8 +2,6 @@
 User-agent: *
 Allow: /
 
-# Host
-Host: https://videojs-theme-kit-site.vercel.app
 
 # Sitemaps
 Sitemap: https://videojs-theme-kit-site.vercel.app/sitemap.xml
